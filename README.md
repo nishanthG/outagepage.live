@@ -1,5 +1,7 @@
 ### Displays an outage page with counter to the live day. Used on my portfolio site while the page was down for re-launch.
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+**Note: this is live on https://outagepage.netlify.app**
+
+
 
 # Getting Started with Create React App
 
