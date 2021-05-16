@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "header header header"
+    ". counter ."
+    ". image .";
+}
+
+.outage h1 {
+    font-size: 4rem;
+    grid-area: header;
+    padding: 5rem;
+}
+
+.timer {
+    grid-area: counter;
+    display: flex;
+    justify-content:space-evenly;
+}
+
+.timer h2 {
+    font-size: 40px;
+}
+
+.timer h3 {
+    font-size: 25px;
+}
+
+@media screen and (max-width: 767px) {
+    .outage h1 {
+        font-size: 3rem;
+        padding: 4rem;
+    }
+
+    .timer h2 {
+        font-size: 30px;
+    }
+    
+    .timer h3 {
+        font-size: 20px;
+    }
+}
+
+.outage img {
+    grid-area: image;
+    justify-self: center;
+    max-width: 100vw;
+}
